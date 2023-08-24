@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method Di constructor Function</title>
+  </head>
+  <body>
+    <!--  -->
+
+    <script>
+      function Person(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.sayHello = function (name) {
+          console.log(`Hello, ${name}, my name is ${this.firstName}`);
+        };
+      }
+
+      const faisal = new Person("Jawa", "Barat");
+
+      faisal.sayHello("Joko");
+
+      const muaris = new Person("Faisal", "Muaris");
+      muaris.sayHello("Joko");
+
+      console.log(faisal);
+      console.log(muaris);
+    </script>
+  </body>
+</html>
