@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <!--  -->
+
+    <script>
+      function Person() {
+        this.firstName = "";
+        this.lastName = "";
+      }
+
+      const faisal = new Person();
+      faisal.firstName = "Faisal";
+      faisal.lastName = "Tanpanya";
+      //   faisal.firstName = "Faisal"; Bisa digunakan untuk menambahkan property ke constructor
+      const muaris = new Person();
+      muaris.firstName = "Muaris";
+      muaris.lastName = "Pamungkas";
+
+      console.log(faisal);
+      console.log(muaris);
+    </script>
+  </body>
+</html>
