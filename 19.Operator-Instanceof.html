@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Instanceof</title>
+  </head>
+  <body>
+    <!-- 
+        Instance atau Class adalah suatu prototype yang menampung constructor method atau function
+        instanceof berfungsi untuk mengecek apakah instance tersebut bagian dari/ dibuat dari atau turunan dari instance diatasnya
+     -->
+
+    <script>
+      class Employee {}
+
+      class Manager extends Employee {}
+
+      const budi = new Employee();
+      const aris = new Manager();
+
+      console.log(typeof budi);
+      console.log(typeof aris);
+
+      console.log(budi instanceof Employee); // TRUE
+      console.log(budi instanceof Manager); // FALSE
+      console.log(aris instanceof Manager); // TRUE
+      console.log(aris instanceof Employee); // FALSE
+    </script>
+  </body>
+</html>
